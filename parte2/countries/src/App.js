@@ -9,7 +9,7 @@ const App =(props)=>{
   const [filpais, setFilpais]=useState([])
   const [apiresponse,setApiresponse]=useState([])
   const [query, setQuery]=useState('Singapore')
-  const api_key='da134560d8a47d8bd6d14665ded5d1cb'
+  const api_key=process.env.REACT_APP_API_KEY
 
 
   useEffect(()=>{
